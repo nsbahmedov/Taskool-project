@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Euclid Circular A";
+    src: url('./assets/fonts/Euclid\ Circular\ A/Euclid Circular A Regular.ttf') format("truetype");
+  }
+
+* {
+    font-family: "Euclid Circular A";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --main-backgroung: #f9f9f9;
+  --text-gray-1: #333333;
+  --text-gray-2: #4F4F4F;
+  --text-gray-3: #828282;
+  --text-dark: #1A1D1C;
+  --text-purple: #7561DA;
+  --upload-header: #C5E4AE;
+  --detail-bg-gray: #F2F2F2;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-style: none;
+}
+
+/* GLOBAL CLASSES */
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem 6rem;
+}
+
+
+.border {
+  border-radius: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* animation for slider-pages */
+/* animation: 0.3s ease slideInFromRight;
+    @keyframes slideInFromRight {
+        0% {
+         transform: translateX(100%);
+        }
+        100% {
+         transform: translateX(0);
+        }
+    } */
