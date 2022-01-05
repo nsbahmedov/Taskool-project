@@ -37,7 +37,7 @@ const FooterDiv = styled.footer`
         background-color: red;
     `}
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
         padding: 1rem;
     }

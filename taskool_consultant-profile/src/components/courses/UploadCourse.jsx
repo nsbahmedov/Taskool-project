@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Footer from '../template/Footer'
-import CreateNewCourse from '../../styled-components/CreateNewCourse'
-
+import CreateNewCourse from './NewCourse/CreateNewCourse'
 
 const UploadCourse = () => {
     return (
@@ -46,7 +45,7 @@ const Upload = styled.div`
         border-top: 1px solid grey;
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         header {
             padding: 1rem;
         }

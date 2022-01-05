@@ -4,11 +4,11 @@ import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import StaticDatePicker from '@mui/lab/StaticDatePicker';
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-import { icons } from '../assets/icons/icons'
-import Inputs from './Inputs'
-import Selects from './Selects'
-import {NextBtn} from './Buttons';
-import TextAreas from './TextAreas'
+import { icons } from '../../../assets/icons/icons'
+import Inputs from '../../../styled-components/Inputs'
+import Selects from '../../../styled-components/Selects'
+import {NextBtn} from '../../../styled-components/Buttons';
+import TextAreas from '../../../styled-components/TextAreas'
 
 
 
@@ -68,7 +68,7 @@ const NewCourse = styled.section`
     flex: 1;
     padding: 2.5rem 6rem;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         padding: 1rem;
         flex-direction: column;
 
@@ -85,7 +85,7 @@ const CourseCover = styled.div`
     border: 2px dashed #BDBDBD;
     text-align: center;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         padding: 1rem;
     }
 
@@ -119,7 +119,7 @@ const CourseCover = styled.div`
         color: var(--text-gray-2);
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         .coverContent {
         padding: 1rem;
         }
@@ -139,7 +139,7 @@ const CourseDetails = styled.div`
         color:  var(--text-gray-2);
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         padding: 1rem;
     }
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ConsultantProfile from '../../styled-components/ConsultantProfile'
+import ConsultantProfile from '../ConsultantProfile/ConsultantProfile'
 import EmptyCourse from '../courses/EmptyCourse'
 
 
@@ -30,7 +30,7 @@ const Section = styled.section`
         flex-wrap: wrap;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
         height: fit-content;
         padding: 1rem;

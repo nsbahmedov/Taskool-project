@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { icons } from '../assets/icons/icons'
+import { icons } from '../../assets/icons/icons'
 
 
 
@@ -11,7 +11,7 @@ const ConsultantProfile = () => {
     return (
         <Profile className='border'>
             <div className='user-info'>
-                <img src={require('../assets/images/user-img-lg.png')} />
+                <img src={require('../../assets/images/user-img-lg.png')} alt='for-user' />
                 <h2>Gunel Mammadova</h2>
             </div>
             <div className='user-action'>
@@ -39,7 +39,7 @@ const Profile = styled.div`
         color: var(--text-dark);
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         width: fit-content;
     }
 

@@ -44,7 +44,7 @@ const Navigation = styled.nav`
         margin-left: 1.5rem;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         flex-direction: column;
     }
 `
