@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {AddBtn} from '../../styled-components/Buttons'
 import {Link} from 'react-router-dom'
+import CreateNewCourse from './NewCourse/CreateNewCourse'
 
 
 
@@ -14,7 +15,7 @@ const EmptyCourse = () => {
                 <h3>Add your first course</h3>
                 <p>You dont publish any course yet.<br/>
                     Start with your first course</p>
-                <AddBtn as={Link} to={'/UploadCourse'} className='border'>
+                <AddBtn as={Link} to={'/newcourse'} className='border'>
                    Kurs əlavə et
                     </AddBtn>
             </div>

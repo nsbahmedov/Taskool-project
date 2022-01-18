@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Footer from '../template/Footer'
-import CreateNewCourse from './NewCourse/CreateNewCourse'
 
 const UploadCourse = () => {
     return (
@@ -11,17 +9,12 @@ const UploadCourse = () => {
                 <Link to={'/'}>Kursunu dərc et</Link>
                 <Link to={'/'}>Çıxış</Link>
             </header>
-
-            <CreateNewCourse />
-
-            <Footer />
         </Upload>
     )
 }
 
 
 const Upload = styled.div`
-    height: 100vh;
     
     header {
         background-color: var(--upload-header);

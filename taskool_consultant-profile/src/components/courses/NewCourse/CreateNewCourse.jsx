@@ -9,6 +9,9 @@ import Inputs from '../../../styled-components/Inputs'
 import Selects from '../../../styled-components/Selects'
 import {NextBtn} from '../../../styled-components/Buttons';
 import TextAreas from '../../../styled-components/TextAreas'
+import UploadCourse from '../UploadCourse';
+import Footer from '../../template/Footer'
+
 
 
 
@@ -17,6 +20,8 @@ const CreateNewCourse = () => {
     const [value, setValue] = useState(new Date());
 
     return (
+        <div>
+            <UploadCourse/>
         <NewCourse className='d-flex justify-between'>
                 {/* NEW COURSE COVER */}
             <CourseCover className='border'>
@@ -56,10 +61,13 @@ const CreateNewCourse = () => {
                 <Selects><option>Choose language</option></Selects>
                 <Inputs placeholder='Kursun youtube linki' />
                 <TextAreas placeholder={'Description'}></TextAreas>
-                <NextBtn as={Link} to={'/UploadCourse'} className='border'>
+                <NextBtn as={Link} to={'/coursecontent'} className='border'>
                     Next</NextBtn>
             </CourseDetails>
         </NewCourse>
+
+        <Footer />
+        </div>
     )
 }
 

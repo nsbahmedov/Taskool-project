@@ -23,6 +23,15 @@ export const NextBtn = styled(Buttons)`
         color: var(--text-dark);
 `
 
+export const AddWeekBtn = styled.button`
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #B6A5F5;
+    border-radius: 0.5rem;
+`
+
 
 
 export default Buttons
