@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UploadCourse from '../UploadCourse';
 import Footer from '../../template/Footer'
 import styled from 'styled-components';
@@ -17,19 +17,32 @@ import VideoIcon from '../../../assets/images/video-play.png'
 
 
 const CourseContent = () => {
+
+    const [week, setWeek] = useState(1)
+    const isNewWeek = week > 1 ? 'visible' : 'hidden'
+
+    const addNewWeek = () => {
+        setWeek(prev => 2)
+    }
+
     return (
         <AddContentOfCourse>
             <UploadCourse />
+           
             <Content>
+            <div className='week'>
+                <Selects week style={{visibility: `${isNewWeek}`}}>
+                    <option>Həftə {week}</option>
+                    </Selects>
                 <div className='content-area'>
-                    <h2>Create content of Week 1</h2>
+                    <h2>Create content of Week {week}</h2>
                     <div className='all-contents'></div>
                 </div>
-
+            </div>
                 <CourseDetails className='d-flex flex-column'>
                     <div className='week-info'>
-                        <h2>Həftə 1</h2>
-                        <AddWeekBtn>+ &nbsp;&nbsp; Add new week</AddWeekBtn>
+                        <h2>Həftə {week}</h2>
+                        <AddWeekBtn onClick={addNewWeek}>+ &nbsp;&nbsp; Add new week</AddWeekBtn>
                     </div>
                     <div className='toolbox'>
                         <div className='toolbox-text'>
@@ -119,6 +132,11 @@ const Content = styled.section`
     padding: 3rem 6rem;
     display: flex;
     justify-content: space-between;
+
+    .week {
+        display: flex;
+        flex-direction: column;
+    }
 
     .content-area {
         height: 50%;
